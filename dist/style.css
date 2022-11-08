@@ -40,7 +40,6 @@ body {
 }
 
 .container {
-  background: url("images/image-qr-code.png") no-repeat center center/cover;
   width: min(100% - 2.5rem, 20rem);
   margin-inline: auto;
   overflow: hidden;
@@ -72,14 +71,9 @@ a:active {
   height: 31.0625rem;
 }
 .card__image {
-  background-image: url("/app/images/image-qr-code.png");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background: url("/app/images/image-qr-code.png") no-repeat center center/cover;
   border-radius: inherit;
-  min-width: 18.125rem;
+  max-width: 18.125rem;
   min-height: 18rem;
   margin-bottom: 1.75rem;
 }
