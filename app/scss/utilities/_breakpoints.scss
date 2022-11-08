@@ -1,0 +1,27 @@
+@use 'functions' as f;
+// 700px, 900px, 1440px
+// Sass Map
+$breakpoints-up: (
+  'medium': f.rem(700),
+  'large': f.rem(900),
+  'x-large': f.rem(1440),
+);
+
+// 699px, 899px, 1439px
+$breakpoints-down: (
+  'small': f.rem(699),
+  'medium': f.rem(899),
+  'large': f.rem(1439),
+);
+
+@mixin breakpoint($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}

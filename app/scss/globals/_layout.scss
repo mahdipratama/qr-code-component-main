@@ -1,0 +1,15 @@
+@use '../utilities' as *;
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  background: url('images/image-qr-code.png') no-repeat center center / cover;
+  width: min(100% - rem(40), rem(320));
+  margin-inline: auto;
+  overflow: hidden;
+}

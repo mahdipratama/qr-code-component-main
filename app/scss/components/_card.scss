@@ -1,0 +1,38 @@
+@use '../utilities' as *;
+
+.card {
+  background-color: var(--white);
+  border-radius: rem(10);
+  padding: rem(15);
+  height: rem(497);
+
+  &__image {
+    background-image: url('/app/images/image-qr-code.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    // background: url('/app/images/image-qr-code.png') no-repeat center center /
+    //   cover;
+    object-fit: cover;
+    border-radius: inherit;
+    min-width: rem(290);
+    min-height: rem(288);
+    margin-bottom: rem(28);
+  }
+
+  &__description {
+    text-align: center;
+    padding: 0 rem(16);
+    & h1 {
+      color: var(--dark-blue);
+      font-size: rem(18);
+      font-weight: 700;
+      margin-bottom: rem(24);
+    }
+
+    & p {
+      font-size: rem(15);
+      font-weight: 400;
+    }
+  }
+}
