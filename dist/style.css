@@ -68,7 +68,7 @@ a:active {
   background-color: var(--white);
   border-radius: 0.625rem;
   padding: 0.9375rem;
-  height: 31.0625rem;
+  min-height: 31.0625rem;
 }
 .card__image {
   background: url("/app/images/image-qr-code.png") no-repeat center center/cover;
@@ -83,7 +83,7 @@ a:active {
 }
 .card__description h1 {
   color: var(--dark-blue);
-  font-size: 1.125rem;
+  font-size: 1.3125rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
