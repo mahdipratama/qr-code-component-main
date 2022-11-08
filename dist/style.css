@@ -1,0 +1,99 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-outfit);
+  background-color: var(--light-gray);
+  color: var(--grayish-blue);
+}
+
+p {
+  font-size: 15px;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+:root {
+  --font-outfit: "Outfit", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  background: url("images/image-qr-code.png") no-repeat center center/cover;
+  width: min(100% - 2.5rem, 20rem);
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 0.625rem;
+  padding: 0.9375rem;
+  height: 31.0625rem;
+}
+.card__image {
+  background-image: url("/app/images/image-qr-code.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+  min-width: 18.125rem;
+  min-height: 18rem;
+  margin-bottom: 1.75rem;
+}
+.card__description {
+  text-align: center;
+  padding: 0 1rem;
+}
+.card__description h1 {
+  color: var(--dark-blue);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.card__description p {
+  font-size: 0.9375rem;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
